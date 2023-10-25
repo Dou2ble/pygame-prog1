@@ -1,0 +1,5 @@
+#+title: Readme
+
+* TODO
+- Add a limit for how many bullets are shot per second
+  currently one bullet fires every single frame.
