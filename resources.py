@@ -16,6 +16,7 @@ TEXTURE_SCALED_FLIPPED_ENEMY = pygame.transform.flip(TEXTURE_SCALED_ENEMY, True,
 pygame.font.init()
 FONT_SIZE = 32
 FONT_THALEAH = pygame.font.Font("ThaleahFat.ttf", FONT_SIZE)
+COLOR_TEXT = (205, 214, 244)	
 
 COLOR_RED = (255, 0, 0)
 COLOR_WHITE = (255, 255, 255)

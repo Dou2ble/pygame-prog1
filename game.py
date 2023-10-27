@@ -178,10 +178,7 @@ def update_game(events: list[pygame.event.Event], dt: float) -> bool:
 
         # check if it has hit a enemy
         for enemy in enemies:
-            # if math.sqrt(abs(bullet.x - enemy.x)**2 + abs(bullet.y - bullet.y)**2) <= ENEMY_SIZE:
             if utils.distance((bullet.x, bullet.y), (enemy.x, enemy.y)) <= ENEMY_RADIUS:
-
-            # if bullet.x >= enemy.x - ENEMY_SIZE/2 and bullet.x <= enemy.x + ENEMY_SIZE/2 and bullet.y >= enemy.y - ENEMY_SIZE/2 and bullet.y <= enemy.y + ENEMY_SIZE/2:
                 enemy.hit()
                 # TODO: fix so that i dont have to use a try except here
                 try:
@@ -206,7 +203,7 @@ def update_game(events: list[pygame.event.Event], dt: float) -> bool:
 
         if utils.distance((enemy.x, enemy.y), (player.x, player.y)) < PLAYER_SIZE:
             player.health -= 1
-            # enemies.pop(i)
+            enemies.pop(i)
             continue
 
 
